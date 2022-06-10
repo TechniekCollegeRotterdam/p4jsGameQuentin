@@ -2,6 +2,8 @@ const computerChoice = document.getElementById("computer-choice");
 const playerChoice = document.getElementById("player-choice");
 const resultOutput = document.getElementById("result");
 
+//ophalen van gegevens is goed gedaan
+
 const possibleChoices = document.querySelectorAll('button');
 
 let computer;
@@ -14,6 +16,8 @@ possibleChoices.forEach(button => button,addEventListener('click', (e) => {
     generateComputerChoice();
     getResult();
 }));
+
+//wel graag comments gebruiken zodat ik weet wat de code doet
 
 const generateComputerChoice = () =>{
     const randomNumber = Math.floor(Math.random() * 3) + 1;
@@ -61,5 +65,5 @@ const getResult = () => {
     };
     resultOutput.innerHTML = result;
 }
-
+//code ziet er netjes eruit
 
